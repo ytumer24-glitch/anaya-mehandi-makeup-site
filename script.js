@@ -16,3 +16,10 @@ form.addEventListener("submit", (e) => {
     successMessage.style.color = "green";
     form.reset();
 });
+
+const humburger = document.querySelector(".humburger");
+const navbar = document.querySelector(".navbar");
+
+humburger.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});

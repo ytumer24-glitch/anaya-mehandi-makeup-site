@@ -6,33 +6,31 @@ body{
 }
 .container{
     margin-top: 4rem;
-    height: 100rem;
+    height: 90%;
     width: 90%;
     background-color: #fff8f5;
     border-radius: 1.5rem;
 }
 .header{
-    margin-top: 2rem;
+    height: 20%;
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    
-    
+    margin-top: 3rem;
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 10%;
-    width: 30%;
-    margin-top: 1rem;
-    margin-left: 15rem;
+    width: 50%;
+    
 }
 
 #heading{
     color: #f041b0;
-    padding-top: 1rem;
-    margin-right: 15rem;
+    width: 50%;
+    text-align: center;
 
 }
 .navbar a{
@@ -40,7 +38,6 @@ body{
     color: black;
     font-size: 0.9rem;
     font-weight: 600;
-
     
 }
 #hegit{
@@ -51,9 +48,10 @@ padding: 0.5rem 0.9rem 0.5rem 0.9rem;
 
 }
 
-.navbar i {
-    padding-left: 7rem;
-    padding-right: 2rem;
+.humburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #contact{
@@ -62,29 +60,26 @@ padding: 0.5rem 0.9rem 0.5rem 0.9rem;
 
 .content{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
-    height: 30rem;
     width: 100%;
-    padding-top: 5rem;
+    padding: 70px 40px;
+    gap: 40px;
 }
 
 .images{
     height : 22rem;
-    width: 22rem;
+    width: 100%;
+    overflow: hidden;
     
 }
 img{
-height : 22rem;
+    height : 22rem;
     width: 22rem;
     border-radius: 1rem;
 }
-.mahandi{
-    height: 50%;
-    width: 50%;
-}
+
 .mahandi h1{
-    padding-top: 5rem;
     color: #f041b0;
     font-size: 2.8rem;
 }
@@ -128,37 +123,14 @@ height : 22rem;
     justify-content: space-evenly;
     padding-top: 7rem;
     font-size: 1.5rem;
+    gap: 50px;
 }
 
 .contact h2{
     color:#f041b0;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        width: 100%;
-        justify-content: space-around;
-        margin-left: 0;
-    }
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .images {
-        width: 100%;
-        height: auto;
-    }
-    .mahandi {
-        width: 100%;
-        text-align: center;
-    }
-}
+
+
  #success-msg{
     color: purple;
     font-size: 1rem;
@@ -185,4 +157,75 @@ form input, form textarea {
     cursor: pointer;
     margin-top: 2rem;
     font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color:white;
+        width: 180px;
+        top: 70px;
+        right: 15px;
+        border: 1px solid #f2c2d4;
+        border-radius: 0.5rem;
+        padding: 10px 0;
+        z-index: 100;
+        
+    }
+    .navbar a {
+        color: #333;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+    }
+    .navbar a:hover {
+        background-color: #fdf0f5;
+        color: #d63384;
+    }
+    .navbar.active {
+        display: block;
+        
+    }
+
+    .humburger {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .mahandi p {
+    font-size: 0.9rem;
+}
+.mahandi h1{
+    font-size: 2rem;
+}
+/* img{
+    height : 17rem;
+    width: 17rem;
+    border-radius: 1rem;
+} */
+   
+.contact {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+
+    img {
+    height : 17rem;
+    width: 17rem;
+    border-radius: 1rem;
+}
 }
