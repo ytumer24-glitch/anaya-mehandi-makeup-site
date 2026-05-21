@@ -9,12 +9,16 @@ buttons.forEach((button) => {
     });
 });
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name = nameInput.value;
-    successMessage.textContent = `Thank you, ${name}, for contacting us! We will get back to you soon.`;
-    successMessage.style.color = "green";
-    form.reset();
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const name = nameInput.value;
+//     successMessage.textContent = `Thank you, ${name}, for contacting us! We will get back to you soon.`;
+//     successMessage.style.color = "green";
+//     form.reset();
+// });
+
+document.querySelector("form").addEventListener("submit", function(e) {
+  setTimeout(() => { this.reset(); }, 1000);
 });
 
 const humburger = document.querySelector(".humburger");

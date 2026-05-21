@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>anaya-mahandi-site</title>
+    <title>Anaya-Mahandi-Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="home-page">
     <div class="container">
     <div class="header">
         <div id="heading">
@@ -43,30 +43,31 @@
     </div>
 </div>
    <div  id="services" class="card">
-    <div id="card1">
+    <a href="bridal.html" id="card1">
       <h1> Bridal</h1>
       <h1 id="dark">Mahandi</h1>
-      <button class="button">Book Now</button>
-    </div>
-    <div id="card1">
+      
+    </a>
+    <a href="party.html" id="card1">
         <h1> Party</h1>
       <h1 id="dark">Mahandi</h1>
-      <button class="button">Book Now</button>
-    </div>
-    <div id="card1">
+      
+    </a>
+    <a href="arabic.html" id="card1">
         <h1> Arabic</h1>
       <h1 id="dark">Mahandi</h1>
-      <button class="button">Book Now</button>
-    </div>
+    </a>
    </div>
    <div  id="contact" class="contact">
     <section id="contact-form">
         <h2>Contact Us</h2>
-        <form id="contForm">
+        <form action= "https://formspree.io/f/xredqbld" method="POST" id="contForm">
             <p>Name</p>
-            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="text" id="name" name="name" placeholder=" Your Name" required><br>
+            <p>Email</p>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
             <p>Message</p>
-            <textarea  id="mesg" cols="30" rows="5" placeholder="Apna Message Likho"></textarea><br>
+            <textarea  id="mesg" name="message" cols="30" rows="5" placeholder="Apna Message Likho"></textarea><br>
             <button  class="bttn">Submit</button><br>
             <p id="success-msg">Msg send successfully</p>
         </form>
@@ -75,9 +76,9 @@
     <div id="contact info">
     <div id="add">
         <h2>Address</h2> 
-        <p>house no 17 malir karachi <br>
+        <p> Malir Karachi <br>
 
-            03232158536</p> 
+            03142353903</p> 
     </div>
     <div id="inst">
        <h2>instragram</h2>
